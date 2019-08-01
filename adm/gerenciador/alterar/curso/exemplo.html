@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" class="has-navbar-fixed-top">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="UDt2RoySc4iVjsULKd3VuGJo2xoyrT4De2uOMfLf">
+
+    <title>Jornada Acadêmica On-line</title>
+
+    <link href="..\..\..\..\css\app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="..\..\..\..\apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="..\..\..\..\apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="..\..\..\..\apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="..\..\..\..\apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="..\..\..\..\apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="..\..\..\..\apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="..\..\..\..\apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="..\..\..\..\apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="..\..\..\..\apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="..\..\..\..\android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="..\..\..\..\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="..\..\..\..\favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="..\..\..\..\favicon-16x16.png">
+    <link rel="manifest" href="..\..\..\..\manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <nav class="navbar is-fixed-top is-transparent">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+            <img src="..\..\..\..\images\logo_menu.png">
+        </a>
+
+        <div class="navbar-burger burger has-text-white" data-target="navBarJAO">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="navBarJAO" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="..\..\..\..\index.htm">Início</a>
+            <a class="navbar-item" href="..\..\..\..\conteudo\painel-cientifico.html">Painel Científico</a>
+            <a class="navbar-item" href="..\..\..\..\conteudo\cursos.html">Cursos</a>
+
+            <a class="navbar-item is-hidden-desktop" href="http://localhost:8000/locale/en">Trocar idioma</a>
+            <a class="navbar-item is-hidden-desktop" href="..\..\..\..\suporte.html">Ajuda</a>
+            <a class="navbar-item is-hidden-desktop" href="..\..\..\..\conteudo\home.html">Meu Espaço</a>
+        </div>
+
+        <div class="navbar-end is-hidden-mobile">
+            <div class="navbar-item">
+                <span class="has-text-grey-light">Usuário</span>
+            </div>
+
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="button is-primary is-outlined" href="..\..\..\..\conteudo\home.html" title="Meu Espaço">
+                            <span class="icon">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-success is-outlined" href="http://localhost:8000/locale/en" title="Trocar idioma">
+                            <span class="icon">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-warning is-outlined" href="..\..\..\..\suporte.html" title="Ajuda">
+                            <span class="icon">
+                                <i class="fas fa-question-circle"></i>
+                            </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <div class="container-interno">
+        <main class="container">
+            
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-6 is-offset-3">
+                <h3 class="title has-text-grey">Editar Curso</h3>
+                <p class="subtitle has-text-grey">Editando dados do curso #<strong>wi99Gp</strong></p>
+
+                <div class="box">
+                    <i class="fas fa-edit big-icon"></i>
+
+                    <form method="post" action="http://localhost:8000/adm/gerenciador/alterar/curso">
+                        <input type="hidden" name="_token" value="NJjHaJYXu9e9v3abRoU0J3WGiaBOdeCfzt3WM0hO">
+                        <div class="field">
+                            <div class="control">
+                                <input
+                                    name="titulo"
+                                    type="text"
+                                    class="input"
+                                    placeholder="Título do curso"
+                                    title="Digite o título (nome) do curso"
+                                    value="Cirurgia Periodontal Pré-Protética"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-half">
+                                <div class="field">
+                                    <div class="control">
+                                        <input
+                                            name="instrutor"
+                                            type="text"
+                                            class="input"
+                                            placeholder="Instrutor/professor do curso"
+                                            title="Digite o nome do instrutor/professor"
+                                            value="Fernanda Brito"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+                                        <input
+                                            name="titulacao"
+                                            type="text"
+                                            class="input"
+                                            placeholder="Titulação do instrutor/professor"
+                                            title="Digite a titulação do instrutor/professor"
+                                            value="Pós-Doutora em Periodontia - Universidade do Estado do Rio de Janeiro (UERJ)"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column is-3">
+                                <div class="field">
+                                    <div class="control">
+                                        <input
+                                            name="qtd_horas"
+                                            type="number"
+                                            class="input"
+                                            min="1"
+                                            max="9999"
+                                            placeholder="Carga horária do curso (somente números)"
+                                            title="Carga horária total do curso (somente números)"
+                                            value="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+                                        <input
+                                            name="url_template_certificado"
+                                            type="text"
+                                            class="input"
+                                            placeholder="URL do template do certificado"
+                                            title="Digite o endereço completo do arquivo do template de certificado utilizado para este curso"
+                                            value="https://images2.imgbox.com/22/84/83FCo6JW_o.jpg"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <div class="control">
+                                        <input
+                                            name="url_capa"
+                                            type="text"
+                                            class="input"
+                                            placeholder="URL da capa do curso"
+                                            title="Digite o endereço completo do arquivo da capa deste curso"
+                                            value="https://images2.imgbox.com/c3/c0/ci0CCPAy_o.jpg"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="label">Descrição:</label>
+                                <textarea
+                                    id="editor-descricao-curso"
+                                    name="descricao">&lt;p&gt;&lt;i&gt;Tema: Cirurgia periodontal com enfoque para o clínico: gengivectomia, cunha distal, aumento de coroa clínica.&lt;/i&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Apresentar as técnicas cirúrgicas pré-protéticas mais utilizadas no curso de graduação e pelo cirurgião dentista clínico geral, discutindo suas indicações, contra-indicações e limitações&lt;/p&gt;</textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="label">Anexos cadastrados:</label>
+                                <div class="table-container">
+                                    <table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+                                        <thead>
+                                            <tr>
+                                                <th>Tipo</th>
+                                                <th>Conteúdo (valor)</th>
+                                                <th class="has-text-centered"><i class="fas fa-cog"></i></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                                                        <tr>
+                                                <td colspan="3">Nenhum conteúdo cadastrado pra este curso.</td>
+                                            </tr>
+                                                                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="columns is-mobile">
+                            <div class="column">
+                                <p class="control">
+                                    <a href="http://localhost:8000/conteudo/home" class="button is-link is-medium is-outlined is-info is-fullwidth" title="Voltar para painel"><i class="fas fa-chevron-left"></i></a>
+                                </p>
+                            </div>
+                            <div class="column is-2">
+                                <p class="control">
+                                    <a href="..\..\adicionar\anexo\exemplo.html" class="button is-success is-medium is-fullwidth is-outlined" title="Adicionar anexo ao curso (informações/conteúdos extras)."><i class="fas fa-paperclip"></i></a>
+                                </p>
+                            </div>
+                            <div class="column is-8">
+                                <p class="control">
+                                    <button class="button is-primary is-medium is-fullwidth" type="submit">Salvar alterações</button>
+                                </p>
+                            </div>
+                        </div>
+
+                        <input type="hidden" name="cid" value="eyJpdiI6InorbStPaVdzN2M4UHZxR1M3RTRBYkE9PSIsInZhbHVlIjoiYWNnZWkrdHlyTUsrRzh3XC9MT3E5Y0E9PSIsIm1hYyI6ImI5ZjJlNGZlMTI4NzViMDY5ZWM0ODZiZjE1NDUxMjMwNzg4OTAzNjExMGMzZjI1ZjgxN2M3NDFlNzk1Nzk4MjQifQ==">
+                    </form>
+                </div>
+
+                <br>
+
+                <p class="has-text-grey">
+                    <a href="http://localhost:8000" title="Página inicial">Início</a>
+                    <i class="far fa-question-circle"></i>
+                    <a href="http://localhost:8000/suporte" title="Fazer login">Dúvidas</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </main>
+    </div>
+
+    <footer class="footer is-paddingless has-text-centered footer-interno">
+    <br>
+
+    <figure class="has-image-centered">
+        <img src="..\..\..\..\images\teleodonto.png" alt="Logo da TeleOdonto" width="120px" class="is-marginless">
+    </figure>
+
+    <br>
+
+    <div class="links-redes-sociais">
+        <span class="icon is-medium">
+            <a href="https://www.fb.me/teleodontologiafouerj" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        </span>
+        <span class="icon is-medium">
+            <a href="https://www.instagram.com/teleodontofouerj" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        </span>
+    </div>
+
+    <br>
+
+    <h4>® 2019 Universidade do Estado do Rio de Janeiro - Todos os direitos reservados</h4>
+
+    <br>
+
+</footer>
+
+    <script src="..\..\..\..\js\app.js" defer=""></script>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor.create(document.querySelector('#editor-descricao-curso'), {
+            toolbar: ['bold', 'italic', 'link', '|', 'undo', 'redo']
+        }).catch( error => {
+            console.error( error );
+        } );
+    </script>
+</body>
+</html>
